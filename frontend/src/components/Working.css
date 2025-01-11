@@ -1,0 +1,27 @@
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 80%; /* Adjust as necessary */
+  }
+  
+  .carousel {
+    display: flex;
+    width: fit-content;
+    animation: scroll-left 15s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%); /* Adjust based on the number of images */
+    }
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 200px; /* Set a fixed width for each item */
+    margin-right: 10px; /* Optional spacing between items */
+  }
+  
