@@ -7,6 +7,8 @@ import Aboutus from './components/Aboutus';
 import Footer from './components/Footer';
 import Login from './components/Login'; 
 import NewUser from './components/Newuser';
+import { Toaster } from 'react-hot-toast';
+
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
         <Route path="/login" element={<>
           <Login />
           <Footer/>
+          <Toaster/>
         </>
       } />
         <Route path="/Newuser" element={<>
@@ -32,7 +35,9 @@ function App() {
         <Footer/>
         </>} />
       </Routes>
+      <Toaster/>
     </Router>
+    
   );
 }
 
